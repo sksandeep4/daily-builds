@@ -1,15 +1,11 @@
-import { useState } from "react";
-import { Navbar } from "./days/day-01-navbar/Navbar";
+import { Day01Navbar } from "./days/day-01-navbar/main";
+import { Day02DiceGame } from "./days/day-02-dice-game/main";
 
 function App() {
-  const [activePage, setActivePage] = useState("Home");
   return (
     <>
-      <div className="min-h-screen bg-gray-100">
-        <Navbar activePage={activePage} setActivePage={setActivePage} />
-
-        <h1 className="m-16">{activePage} PAGE</h1>
-      </div>
+      {/* <Day01Navbar /> */}
+      <Day02DiceGame />
     </>
   );
 }
